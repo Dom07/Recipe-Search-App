@@ -1,0 +1,13 @@
+.Recipe{
+    box-shadow: 10px 5px 5px #ccc;
+}
+
+.DishName{
+    color: green;
+}
+
+.IngredientHeader{
+    cursor: pointer;
+    text-align: left;
+    font-size: 1.2rem;
+}
