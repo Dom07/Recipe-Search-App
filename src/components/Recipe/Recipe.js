@@ -4,7 +4,9 @@ import { Card, Accordion, Col } from 'react-bootstrap';
 import Ingredients from '../Ingredients/Ingredients';
 
 const Recipe = (props) => {
-    const { label, image, ingredients } = props.recipe;
+    const { label, image, ingredients, url } = props.recipe;
+
+    console.log(url);
 
     return (
         <Col>
@@ -13,6 +15,9 @@ const Recipe = (props) => {
             <Card.Body>
                 <Card.Title className="DishName" style={{textAlign: "left"}}>
                     {label}
+                </Card.Title>
+                <Card.Title className="IngredientHeader" style={{textAlign: "left"}}>
+                    <a style={{color: "blue"}} onClick={() => window.open(url, "_blank")}>View Recipe</a>
                 </Card.Title>
                 <Accordion>
                         <Accordion.Toggle as={Card.Title} className="IngredientHeader" variant="link" eventKey={label}>

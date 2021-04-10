@@ -11,7 +11,7 @@ const Ingredients = (props) => {
                     style={{fontSize: '1rem', textAlign:'left', margin: '2px 0 4px 0px', padding: '10px 0px 5px 5px', border: '1px solid green'}}>
             <div>{item.text}</div>
             <div>
-                <p>Weight: {parseInt(item.weight)}</p>
+                <p>Weight: {parseInt(item.weight)} gm(s)</p>
             </div>
         </ListGroup.Item>
     })

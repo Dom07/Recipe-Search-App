@@ -4,10 +4,11 @@
 
 .DishName{
     color: green;
+    font-size: 1.3rem;
 }
 
 .IngredientHeader{
     cursor: pointer;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
